@@ -4,9 +4,10 @@ Tailwind CSS.
 
 ## 🎏 ¿En qué consiste?
 
-Debes replicar el siguiente mockup (Desktop y Mobile) usando [Tailwind CSS](https://tailwindcss.com/).
+Debes replicar el siguiente mockup responsivo usando [Tailwind CSS](https://tailwindcss.com/).
 
-> Nota: Si tienes dudas respecto a Tailwind CSS, te invito a que hagas nuestro [curso en Platzi](https://platzi.com/clases/tailwind-css/) !
+> * Nota 1: Puedes usar [Tailwind.run()](https://tailwind.run/new) para hacer tu maquetación sin necesidad de hacer la instalación.
+> * Nota 2: Si tienes dudas respecto a Tailwind CSS, te invito a que hagas nuestro [curso en Platzi](https://platzi.com/clases/tailwind-css/) !
 
 <kbd>
 <img src="https://i.ibb.co/qDnvKZP/Wouldn-t-you-agree-that-effective-presentation-is-key-to-making-the-right-impression-The-Lombok-Temp.jpg" alt="responsive design" />
