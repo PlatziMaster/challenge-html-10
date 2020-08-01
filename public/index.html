@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="main.css">
+   <title>TailwindCSS - angelozdev</title>
+</head>
+
+<style>
+   * {
+      box-sizing: border-box;
+   }
+
+   main::before {
+      content: '';
+      position: absolute;
+      top   : 0;
+      bottom: 0;
+      right : 0;
+      left  : 0;
+      background-image: url('https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=655&q=80');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      z-index: -1;
+   }
+</style>
+<body>
+   <!-- Navbar -->
+   <div class="m-4 relative">
+      <nav class="text-gray-800">
+         <div class="container mx-auto p-2">
+            <div class="flex justify-between items-center">
+               <figure>
+                  <img src="./logo.svg" alt="logo">
+               </figure>
+               <ul class="flex uppercase p-2 invisible sm:visible">
+                  <li class="ml-4 py-2 px-4">
+                     <a href="#about">About</a>
+                  </li>
+                  <li class="ml-4 py-2 px-4">
+                     <a href="#articles">Articles</a>
+                  </li>
+                  <li class="ml-4 py-2 px-4 border-2 border-gray-800">
+                     <a href="#subscribe">Subscribe</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+
+      <main class="grid justify-center content-center text-center text-gray-800" style="height: calc(100vh - 78px - 2rem);">
+         <h1 class="font-semibold leading-none sm:text-6xl" style="font-size: 4rem">LOMBOK</h1>
+         <h2 class="text-xl font-light uppercase">Holistic Health</h2>
+         <div class="font-bold mb-24">____</div>
+      </main>
+   </div>
+
+   <!-- Articles -->
+   <section id="articles" class="min-h-screen p-4 grid justify-center content-center">
+      <h2 class="text-center text-3xl text-gray-800 uppercase mb-20">Latest Articles</h2>
+      <!-- Hacerlo con pesudo elementos -->
+
+      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
+         <article class="shadow-2xl">
+            <figure class="relative h-0" style="padding-bottom: 75%;">
+               <img class="absolute object-cover top-0 bottom-0 right-0 left-0 w-full h-full" src="https://images.unsplash.com/photo-1490676138263-c0608ea4b6df?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="image 1">
+            </figure>
+            <p class="py-12 px-4 text-center leading-8">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+         </article>
+         <article class="shadow-2xl">
+            <figure class="relative h-0" style="padding-bottom: 75%;">
+               <img class="absolute object-cover top-0 bottom-0 right-0 left-0 w-full h-full" src="https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80" alt="image 1">
+            </figure>
+            <p class="py-12 px-4 text-center leading-8">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+         </article>
+         <article class="shadow-2xl">
+            <figure class="relative h-0" style="padding-bottom: 75%;">
+               <img class="absolute object-cover top-0 bottom-0 right-0 left-0 w-full h-full" src="https://images.unsplash.com/photo-1462266160352-c606c50d44a9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="image 1">
+            </figure>
+            <p class="py-12 px-4 text-center leading-8">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+         </article>
+      </div>
+   </section>
+
+   <!-- ABOUT -->
+
+   <section id="about" class="min-h-screen">
+      <div class="grid grid-cols-1 md:grid-cols-2">
+         <img class="w-full h-64 object-cover md:h-screen" src="https://images.unsplash.com/photo-1548681528-6a5c45b66b42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="cat">
+         </figure>
+         <div class="p-8 flex flex-col justify-center items-center">
+            <h2 class="text-center text-3xl text-gray-800 uppercase mb-8">About</h2>
+            <p class="text-justify leading-8 xl:px-24 md:px-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, mollitia perspiciatis? Pariatur, ut. Dolorum vero accusantium rerum ipsum accusamus maiores quas quod alias reiciendis pariatur sequi, iusto aliquid esse? Obcaecati quidem culpa saepe aut laudantium sed corporis nam consequuntur non, dolor incidunt necessitatibus modi perferendis id nobis, sapiente consectetur maxime placeat molestias qui recusandae maiores nesciunt et? Itaque minus facilis quam. Reprehenderit repellat nesciunt, nulla ab iusto minus adipisci qui deleniti est quisquam sit dolorum alias? Deleniti, beatae! Ipsa officiis mollitia suscipit quibusdam unde nisi ut sunt eligendi, rem alias doloribus laborum illo nihil veniam, ipsum vitae iusto nesciunt expedita.</p>
+         </div>
+      </div>
+   </section>
+
+   <!-- Form -->
+   <section id="subscribe" class="bg-orange-200 py-24 p-4 text-center text-gray-800">
+      <h2 class="text-center uppercase text-3xl">Subscribe</h2>
+      <h3 class="text-xl">Sign-up to our newletter</h3>
+      <form class="my-4">
+         <input class="py-2 px-4 block mx-auto w-full sm:max-w-md" type="email" placeholder="Your email">
+         <button class="font-semibold block w-full border-2 border-gray-800 uppercase py-2 px-4 mt-4 mx-auto sm:max-w-md">SUBMIT</button>
+      </form>
+   </section>
+
+   <!-- Footer -->
+   <footer class="container px-4 mx-auto py-8 md:flex md:justify-between md:flex-row-reverse md:items-center">
+      <ul class="text-center uppercase my-8 md:flex">
+         <li class="py-2 md:ml-4"><a href="#about">About</a></li>
+         <li class="py-2 md:ml-4"><a href="#articles">Articles</a></li>
+         <li class="py-2 md:ml-4"><a href="#subscribe">Subscribe</a></li>
+      </ul>
+      <ul class="flex flex-row justify-center text-white">
+         <li class="mx-2 bg-gray-800 rounded-full p-2"><a href="#">ins</a></li>
+         <li class="mx-2 bg-gray-800 rounded-full p-2"><a href="#">twi</a></li>
+         <li class="mx-2 bg-gray-800 rounded-full p-2"><a href="#">fac</a></li>
+         <li class="mx-2 bg-gray-800 rounded-full p-2"><a href="#">pin</a></li>
+      </ul>
+   </footer>
+</body>
+</html>
