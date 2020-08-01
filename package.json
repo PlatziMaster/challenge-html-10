@@ -1,0 +1,27 @@
+{
+  "name": "challenge-html-10",
+  "version": "1.0.0",
+  "description": "Tailwind CSS.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angelozdev/challenge-html-10.git"
+  },
+  "keywords": [],
+  "author": "Angelo Zambrano <angelozam17@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angelozdev/challenge-html-10/issues"
+  },
+  "homepage": "https://github.com/angelozdev/challenge-html-10#readme",
+  "dependencies": {
+    "tailwindcss": "^1.6.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "live-server": "^1.2.1"
+  }
+}
