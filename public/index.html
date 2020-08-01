@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YELLOW</title>
+  <link rel="shortcut icon" href="https://img.icons8.com/plasticine/100/000000/spa-flower.png" type="image/png">
+  <link rel="stylesheet" href="style.min.css">
+  <style>
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body class="bg-yellow-100">
+  <header id="home" class="p-4 bg-white">
+    <div class="p-10 bg-center bg-no-repeat bg-cover"
+      style="background-image: url(https://images.pexels.com/photos/945453/pexels-photo-945453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)">
+      <nav class=" flex justify-between items-center">
+        <img class="w-10" src="https://img.icons8.com/plasticine/100/000000/spa-flower.png" />
+        <ul class=" hidden md:flex">
+          <li class="mr-2 p-2 uppercase text-xs"><a href="#about">About</a></li>
+          <li class="mr-2 p-2 uppercase text-xs"><a href="#articles">Articles</a></li>
+          <li class="border border-black p-1 px-3 uppercase text-xs "><a href="#subscribe"
+              class="align-middle">Subscribe</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="h-64 px-4 md:xl my-4 flex flex-col items-center justify-center">
+        <h1 class="text-center text-lg uppercase md:text-6xl">Yellow</h1>
+        <p class="text-center text-xs uppercase md:text-sm">Thing in Yellow</p>
+        <span class="border-solid border-2 border-gray-600 w-10 mt-4"></span>
+      </div>
+    </div>
+  </header>
+
+  <section id="articles" class="p-10 py-20 text-center">
+    <h2 class="font-bold mb-3 uppercase text-2xl">Latest articles</h2>
+    <span class="border-b-4 border-gray-600 m-auto block w-10 h-2"></span>
+    <div class="container grid grid-cols-1 md:grid-cols-3 gap-10 mt-10 ">
+      <div class="w-full grid grid-rows-2 items-center shadow-xl bg-white">
+        <figure class="max-w-full">
+          <img class="max-w-full"
+            src="https://images.pexels.com/photos/46274/pexels-photo-46274.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            alt="">
+        </figure>
+        <div class="p-2">
+          <span class="border-b-4 border-gray-600 m-auto block w-10 h-2 mb-4"></span>
+          <blockquote><i>
+              "Todas son un intento, un extraordinario intento de demostrarme que vosotros, y la existencia humana,
+              valéis la pena."
+            </i>. - La Ladrona de Libros</blockquote>
+        </div>
+      </div>
+      <div class="w-full grid grid-rows-2 items-center shadow-xl bg-white">
+        <figure>
+          <img
+            src="https://images.pexels.com/photos/3704611/pexels-photo-3704611.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            alt="">
+        </figure>
+        <div class="p-2">
+          <span class="border-b-4 border-gray-600 m-auto block w-10 h-2 mb-4"></span>
+          <blockquote>
+            <i>"Qué maravilloso es que nadie necesite esperar ni un solo momento antes de comenzar a mejorar
+              el
+              mundo".</i> -
+            El diario de Ana Frank</blockquote>
+        </div>
+      </div>
+      <div class="w-full grid grid-rows-2 items-center shadow-2xl bg-white">
+        <figure>
+          <img
+            src="https://images.pexels.com/photos/1083633/pexels-photo-1083633.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            alt="">
+        </figure>
+        <div class="p-2">
+          <span class="border-b-4 border-gray-600 m-auto block w-10 h-2 mb-4"></span>
+          <blockquote><i>
+              "Me pregunto si las estrellas se iluminan con el fin de que algún día, cada uno pueda encontrar la
+              suya".
+            </i> -
+            El principito</blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main id="about" class="grid grid-cols-1 md:grid-cols-2 bg-white max-w-full mt-20">
+    <figure>
+      <img
+        src="https://images.pexels.com/photos/888899/pexels-photo-888899.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        alt="love is love">
+    </figure>
+    <div class="flex flex-col items-center justify-center bg-white p-4">
+      <div class="container">
+        <h2 class="font-bold uppercase text-center mb-2 text-2xl">About</h2>
+        <span class="border-b-4 border-gray-600 m-auto block w-10 h-2 mb-10"></span>
+        <p class="bg-white">
+          <i>"La vanidad y el orgullo son cosas distintas, aunque muchas veces se usen como sinónimos. El orgullo está
+            relacionado con la opinión que tenemos de nosotros mismos; la vanidad, con lo que quisiéramos que los demás
+            pensaran de nosotros". </i>
+        </p>
+        <p>- Orgullo y prejucio</p>
+      </div>
+
+    </div>
+
+  </main>
+
+  <section id="subscribe" class="bg-gray-200 p-20 text-gray-900 text-center">
+    <div class="container">
+      <h2 class="font-bold uppercase mb-2 text-2xl">subscribe</h2>
+      <p class="">Sign-up to out newsletter</p>
+      <form onsubmit="validateForm(event)">
+        <div class="bg-white p-1 md:w-8/12 m-auto my-2">
+          <input type="email" placeholder="Tu Email" class="py-2 px-4 bg-gray-100 w-full">
+        </div>
+        <button type="submit" class="border border-black py-2 px-6 uppercase text-sm">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="h-40 bg-white flex items-center px-10 ">
+    <div class="container flex md:justify-between justify-center items-center flex-wrap ">
+      <div class="social order-last">
+        <ul class="flex ">
+          <li><a target="blank" href="http://instagram.com"> <img class="w-8 mr-2"
+                src="https://img.icons8.com/ios/50/000000/instagram-new.png" /></a>
+          </li>
+          <li>
+            <a target="blank" href="http://twitter.com"><img class="w-8 mr-2"
+                src="https://img.icons8.com/ios/50/000000/twitter-squared.png" /></a></li>
+          <li>
+
+            <a href="http://facebook.com" target="blank">
+              <img class="w-8 mr-2" src="https://img.icons8.com/ios/50/000000/facebook-circled.png" /></li>
+          </a>
+          <li>
+            <a href="http://pinterest.com" target="_blank" rel="noopener noreferrer">
+              <img class="w-8 mr-2" src="https://img.icons8.com/ios/50/000000/pinterest.png" /></li>
+          </a>
+        </ul>
+      </div>
+      <nav class="order-1 text-center">
+        <ul class="sm:flex ">
+          <li class="mr-2 p-2 uppercase text-xs"><a href="#about">About</a></li>
+          <li class="mr-2 p-2 uppercase text-xs"><a href="#articles">Articles</a></li>
+          <li class="mr-2 p-2 uppercase text-xs"><a href="#subscribe">Susbcribe</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    const validateForm = (event) => {
+      event.preventDefault();
+      let child = event.target.querySelector('input').value;
+      if (child) {
+        child = child.split('@')[0];
+        alert(`${child} gracias por preferirnos`);
+        window.location.href = "#home"
+      } else {
+        alert('Digita por favor tu correo')
+      }
+    }
+  </script>
+</body>
+
+</html>
