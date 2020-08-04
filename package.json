@@ -1,0 +1,27 @@
+{
+  "name": "challenge-html-10",
+  "version": "1.0.0",
+  "description": "Tailwind CSS.",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server docs",
+    "build": "postcss css/tailwind.css -o docs/css/style.css",
+    "watch": "postcss css/tailwind.css -o docs/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iscasur/challenge-html-10.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iscasur/challenge-html-10/issues"
+  },
+  "homepage": "https://github.com/iscasur/challenge-html-10#readme",
+  "dependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.6.2"
+  }
+}
